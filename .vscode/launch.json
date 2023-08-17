@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ProtoCache Server",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/src/ProtoCacheServer/main.go"
+        },
+        {
+            "name": "Sample",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sample",
+            "program": "${workspaceFolder}/src/ProtoCache/Sample/bin/Debug/net6.0/Sample.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/ProtoCache/Sample",
+            "console": "internalConsole",
+            "stopAtEntry": true,
+            "logging": {
+                "moduleLoad": false
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}

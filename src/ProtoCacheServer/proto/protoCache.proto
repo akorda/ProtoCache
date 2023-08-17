@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option go_package = "github.com/akorda/ProtoCache/proto";
+option csharp_namespace = "ProtoCache";
+
+service protoCache {
+	rpc GetCacheItem(GetCacheItemRequest) returns (GetCacheItemResponse);
+	rpc SetCacheItem(SetCacheItemRequest) returns (SetCacheItemResponse);
+	rpc RemoveCacheItem(RemoveCacheItemRequest) returns (RemoveCacheItemResponse);
+}
+
+message GetCacheItemRequest {
+	string key = 1;
+}
+
+message GetCacheItemResponse {
+	bytes value = 1;
+}
+
+message SetCacheItemRequest {
+	string key = 1;
+	bytes value = 2;
+}
+
+message SetCacheItemResponse {
+}
+
+message RemoveCacheItemRequest {
+	string key = 1;
+}
+
+message RemoveCacheItemResponse {
+}

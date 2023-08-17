@@ -1,0 +1,20 @@
+<Project>
+
+  <PropertyGroup>
+    <RepositoryUrl>https://github.com/akorda/ProtoCache.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Product>ProtoCache</Product>
+    <Authors>akorda (akorda@gmail.com)</Authors>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>10.0</LangVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="System.Globalization" />
+  </ItemGroup>
+
+</Project>
